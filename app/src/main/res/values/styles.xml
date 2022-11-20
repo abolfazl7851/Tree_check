@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_theme_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="numberPickerTheme">@style/customNumberPicker</item>
+        <item name="android:dropDownListViewStyle">@style/SpinnerStyle</item>
+    </style>
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">12dp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">34dp</item><!-- item size in menu-->
+
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/app_theme_color</item>
+
+    </style>
+
+    <style name="customNumberPicker">
+        <!-- use this for text color -->
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+
+        <!-- use this for divider color -->
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@color/colorPrimary</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <color name="white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Create_tree"
+    android:background="@color/app_theme_color">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثبت اطلاعات بازرس"
+                    android:id="@+id/text"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/linearlayout1"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_rfid"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="RFID"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout1"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout2"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spinner_tree_type"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="گونه درخت"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout2"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout3"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_address"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="آدرس"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout3"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout4"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_region"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="منطقه"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout4"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout5"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_plaque"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="پلاک"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout5"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout6"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_latitude"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="عرض جغرافیایی"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout6"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout7"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_longitude"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="طول جغرافیایی"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout7"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linearlayout8"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/tree_sal_kasht"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="سال کاشت"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_create_tree"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/linearlayout8"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_shape"
+                    android:text="ایجاد درخت"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_theme_color">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_round"
+                android:layout_margin="10dp"
+                >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/dialog_pb"
+                    android:visibility="invisible"
+                    style="@style/Widget.AppCompat.ProgressBar"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_main_txt"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_main_txt"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/linearlayout1"
+                    android:weightSum="3"
+                    android:background="@drawable/edit_text_round"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/item_name"
+                        android:maxLength="10"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textCursorDrawable="@null"
+                        android:background="@android:color/transparent"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:background="@drawable/button_shape_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:id="@+id/item_textview"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_create_item"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/linearlayout1"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_shape"
+                    android:text="اعمال"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+</ScrollView>

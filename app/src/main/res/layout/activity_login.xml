@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Login"
+    android:background="@color/app_theme_color"
+    android:layout_weight="4">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صفحه ورود"
+            android:id="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linearlayout1"
+            android:weightSum="3"
+            android:background="@drawable/edit_text_round"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/login_username"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textCursorDrawable="@null"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:background="@drawable/button_shape_right"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="نام کاربری"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearlayout2"
+            android:weightSum="3"
+            android:background="@drawable/edit_text_round"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/show_pass_login"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/password_show"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/login_password"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                android:textCursorDrawable="@null"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_shape_right"
+                android:gravity="center"
+                android:text="رمز ورود"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout2"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_spinner"
+            style="@style/SpinnerStyle"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_spinner"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_lin3"
+            android:weightSum="3"
+            android:background="@drawable/edit_text_round"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/login_bazresi_code"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textCursorDrawable="@null"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:background="@drawable/button_shape_right"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="کد بازرسی"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_lin3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:text="ورود"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
